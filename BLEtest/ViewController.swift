@@ -20,7 +20,6 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
     var scanningTimer: Timer?
     
     let MB_ACCELEROMETER   =    CBUUID(string:"E95D0753-251D-470A-A062-FA1922DFA9A8")
-    let MB_MAGNETOMETER    =    CBUUID(string:"E95DF2D8-251D-470A-A062-FA1922DFA9A8")
     let MB_ACCELEROMETER_DATA = CBUUID(string:"E95DCA4B-251D-470A-A062-FA1922DFA9A8")
     let MB_NAME = "BBC micro:bit"
     
@@ -100,7 +99,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
     }
     
    
-    
+    //on values received
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
         
         if error != nil {
@@ -119,19 +118,12 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
                 let y = Int16(bitPattern: UInt16(bytes[3]) << 8 | UInt16(bytes[2]))
                 let z = Int16(bitPattern: UInt16(bytes[5]) << 8 | UInt16(bytes[4]))
                 
-                /*
-                let x = Double(bytes[0].byteSwapped)/1000.0
-                let y = Double(bytes[1].byteSwapped)/1000.0
-                let z = Double(bytes[2].byteSwapped)/1000.0
-                */
-              //  if(abs(x)>10 || abs(y)>10 || abs(z)>10 )
-               // {
-                    lblX.text = "\(x)"
-                    lblY.text = "\(y)"
-                    lblZ.text = "\(z)"
-                    
-                    log("Received x=\(x) y=\(y) z=\(z)")
-                //}
+                lblX.text = "\(x)"
+                lblY.text = "\(y)"
+                lblZ.text = "\(z)"
+                
+                log("Received x=\(x) y=\(y) z=\(z)")
+                
             }
             
         }

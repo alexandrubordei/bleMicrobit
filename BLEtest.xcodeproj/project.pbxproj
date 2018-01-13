@@ -12,6 +12,7 @@
 		FAA6E4422007EAC100D1F7E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA6E4402007EAC100D1F7E7 /* Main.storyboard */; };
 		FAA6E4442007EAC100D1F7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA6E4432007EAC100D1F7E7 /* Assets.xcassets */; };
 		FAA6E4472007EAC100D1F7E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA6E4452007EAC100D1F7E7 /* LaunchScreen.storyboard */; };
+		FAA6E4502007FCE200D1F7E7 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA6E44F2007FCE200D1F7E7 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FAA6E4432007EAC100D1F7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA6E4462007EAC100D1F7E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA6E4482007EAC100D1F7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA6E44F2007FCE200D1F7E7 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA6E4502007FCE200D1F7E7 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				FAA6E43B2007EAC100D1F7E7 /* BLEtest */,
 				FAA6E43A2007EAC100D1F7E7 /* Products */,
+				FAA6E44E2007FCE100D1F7E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				FAA6E4482007EAC100D1F7E7 /* Info.plist */,
 			);
 			path = BLEtest;
+			sourceTree = "<group>";
+		};
+		FAA6E44E2007FCE100D1F7E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAA6E44F2007FCE200D1F7E7 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +109,11 @@
 					FAA6E4382007EAC000D1F7E7 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -275,6 +292,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZU8U54M6Y8;
 				INFOPLIST_FILE = BLEtest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.homealone.BLEtest;
@@ -289,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZU8U54M6Y8;
 				INFOPLIST_FILE = BLEtest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.homealone.BLEtest;

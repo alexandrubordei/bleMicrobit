@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA2EC72B231DA1830077D1C2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2EC72A231DA1830077D1C2 /* SearchViewController.swift */; };
+		FA53A89B2321988900A34F1F /* Microbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53A89A2321988900A34F1F /* Microbit.swift */; };
 		FAA6E43D2007EAC100D1F7E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6E43C2007EAC100D1F7E7 /* AppDelegate.swift */; };
-		FAA6E43F2007EAC100D1F7E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6E43E2007EAC100D1F7E7 /* ViewController.swift */; };
+		FAA6E43F2007EAC100D1F7E7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6E43E2007EAC100D1F7E7 /* MainViewController.swift */; };
 		FAA6E4422007EAC100D1F7E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA6E4402007EAC100D1F7E7 /* Main.storyboard */; };
 		FAA6E4442007EAC100D1F7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA6E4432007EAC100D1F7E7 /* Assets.xcassets */; };
 		FAA6E4472007EAC100D1F7E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA6E4452007EAC100D1F7E7 /* LaunchScreen.storyboard */; };
@@ -16,9 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FAA6E4392007EAC100D1F7E7 /* BLEtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2EC72A231DA1830077D1C2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FA53A89A2321988900A34F1F /* Microbit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Microbit.swift; sourceTree = "<group>"; };
+		FAA6E4392007EAC100D1F7E7 /* LeoProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeoProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA6E43C2007EAC100D1F7E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAA6E43E2007EAC100D1F7E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAA6E43E2007EAC100D1F7E7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FAA6E4412007EAC100D1F7E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAA6E4432007EAC100D1F7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA6E4462007EAC100D1F7E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,7 +45,7 @@
 		FAA6E4302007EAC000D1F7E7 = {
 			isa = PBXGroup;
 			children = (
-				FAA6E43B2007EAC100D1F7E7 /* BLEtest */,
+				FAA6E43B2007EAC100D1F7E7 /* LeoProgress */,
 				FAA6E43A2007EAC100D1F7E7 /* Products */,
 				FAA6E44E2007FCE100D1F7E7 /* Frameworks */,
 			);
@@ -50,22 +54,24 @@
 		FAA6E43A2007EAC100D1F7E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAA6E4392007EAC100D1F7E7 /* BLEtest.app */,
+				FAA6E4392007EAC100D1F7E7 /* LeoProgress.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FAA6E43B2007EAC100D1F7E7 /* BLEtest */ = {
+		FAA6E43B2007EAC100D1F7E7 /* LeoProgress */ = {
 			isa = PBXGroup;
 			children = (
 				FAA6E43C2007EAC100D1F7E7 /* AppDelegate.swift */,
-				FAA6E43E2007EAC100D1F7E7 /* ViewController.swift */,
+				FAA6E43E2007EAC100D1F7E7 /* MainViewController.swift */,
 				FAA6E4402007EAC100D1F7E7 /* Main.storyboard */,
 				FAA6E4432007EAC100D1F7E7 /* Assets.xcassets */,
 				FAA6E4452007EAC100D1F7E7 /* LaunchScreen.storyboard */,
 				FAA6E4482007EAC100D1F7E7 /* Info.plist */,
+				FA2EC72A231DA1830077D1C2 /* SearchViewController.swift */,
+				FA53A89A2321988900A34F1F /* Microbit.swift */,
 			);
-			path = BLEtest;
+			path = LeoProgress;
 			sourceTree = "<group>";
 		};
 		FAA6E44E2007FCE100D1F7E7 /* Frameworks */ = {
@@ -79,9 +85,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FAA6E4382007EAC000D1F7E7 /* BLEtest */ = {
+		FAA6E4382007EAC000D1F7E7 /* LeoProgress */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAA6E44B2007EAC100D1F7E7 /* Build configuration list for PBXNativeTarget "BLEtest" */;
+			buildConfigurationList = FAA6E44B2007EAC100D1F7E7 /* Build configuration list for PBXNativeTarget "LeoProgress" */;
 			buildPhases = (
 				FAA6E4352007EAC000D1F7E7 /* Sources */,
 				FAA6E4362007EAC000D1F7E7 /* Frameworks */,
@@ -91,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = BLEtest;
+			name = LeoProgress;
 			productName = BLEtest;
-			productReference = FAA6E4392007EAC100D1F7E7 /* BLEtest.app */;
+			productReference = FAA6E4392007EAC100D1F7E7 /* LeoProgress.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +123,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FAA6E4342007EAC000D1F7E7 /* Build configuration list for PBXProject "BLEtest" */;
+			buildConfigurationList = FAA6E4342007EAC000D1F7E7 /* Build configuration list for PBXProject "LeoProgress" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -130,7 +136,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FAA6E4382007EAC000D1F7E7 /* BLEtest */,
+				FAA6E4382007EAC000D1F7E7 /* LeoProgress */,
 			);
 		};
 /* End PBXProject section */
@@ -153,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA6E43F2007EAC100D1F7E7 /* ViewController.swift in Sources */,
+				FA2EC72B231DA1830077D1C2 /* SearchViewController.swift in Sources */,
+				FAA6E43F2007EAC100D1F7E7 /* MainViewController.swift in Sources */,
+				FA53A89B2321988900A34F1F /* Microbit.swift in Sources */,
 				FAA6E43D2007EAC100D1F7E7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +301,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZU8U54M6Y8;
-				INFOPLIST_FILE = BLEtest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LeoProgress/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.homealone.BLEtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -308,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZU8U54M6Y8;
-				INFOPLIST_FILE = BLEtest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LeoProgress/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.homealone.BLEtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -320,7 +328,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FAA6E4342007EAC000D1F7E7 /* Build configuration list for PBXProject "BLEtest" */ = {
+		FAA6E4342007EAC000D1F7E7 /* Build configuration list for PBXProject "LeoProgress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAA6E4492007EAC100D1F7E7 /* Debug */,
@@ -329,7 +337,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAA6E44B2007EAC100D1F7E7 /* Build configuration list for PBXNativeTarget "BLEtest" */ = {
+		FAA6E44B2007EAC100D1F7E7 /* Build configuration list for PBXNativeTarget "LeoProgress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAA6E44C2007EAC100D1F7E7 /* Debug */,

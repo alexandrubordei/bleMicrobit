@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:BLEtest.xcodeproj">
+      location = "self:/Users/alex/code/ios/BLETest/BLEtest/LeoProgress.xcodeproj">
    </FileRef>
 </Workspace>
